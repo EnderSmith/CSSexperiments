@@ -49,7 +49,7 @@ body {
   transition: .5s;
 }
 .foreground-block:active {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(179, 0, 0, 0.466);
   box-shadow: none;
   transition: .5s;
 }
