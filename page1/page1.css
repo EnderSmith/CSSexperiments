@@ -1,11 +1,14 @@
 body { 
   background-color: chocolate;
   margin: 0px;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   display: grid;
   grid-template-columns: 1fr;
   height: 100vh;
+  overflow: hidden;
 }
 .background {
   grid-column: 1;
@@ -41,15 +44,14 @@ body {
   box-shadow: .5vh .5vh 1vh white inset,
   -.25vh -.25vh 1vh rgb(29, 29, 29) inset,
   .5vh .5vh 4vh black;
-  transition: .5s;
+  transition: 5s;
 }
 .foreground-block:hover {
-  background-color: rgba(0,0,0,0);
-  box-shadow: none;
-  transition: .5s;
+  transform: translateY(100vh) rotate(500deg);
+  transition-duration: 1s;
+  transition-delay: .5s;
 }
 .foreground-block:active {
-  background-color: rgba(179, 0, 0, 0.466);
-  box-shadow: none;
-  transition: .5s;
+  transform: translateY(100vh) rotate(500deg);
+  transition-duration: 1s;
 }
