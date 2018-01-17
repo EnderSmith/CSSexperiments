@@ -5,7 +5,7 @@ body {
   font-size: 5vmax;
 }
 div.container {
-  transition: 20s;
+  transition: 2s;
   width: 30vmax;
   height: 30vmax;
   overflow: hidden;
