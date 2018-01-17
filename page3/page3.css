@@ -1,0 +1,48 @@
+body {
+  font-family: Courier New, Courier, monospace;
+  font-size: 20pt;
+}
+.letter {
+  transition: 2s;
+}
+.letter-grid {
+  display: grid;
+  grid-template-columns: repeat(16, minmax(.25em, .5em));
+  grid-template-rows: 1em;
+} .letter-grid:hover .e1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+} .letter-grid:hover .y {
+  grid-column-start: 2;
+  grid-row-start: 1;  
+} .letter-grid:hover .e2 {
+  grid-column-start: 3;
+  grid-row-start: 1;  
+} .letter-grid:hover .sp {
+  grid-column-start: 4;
+  grid-row-start: 1;  
+} .letter-grid:hover .u {
+  grid-column-start: 5;
+  grid-row-start: 1;  
+} .letter-grid:hover .n {
+  grid-column-start: 6;
+  grid-row-start: 1;  
+} .letter-grid:hover .b {
+  grid-column-start: 7;
+  grid-row-start: 1;  
+} .letter-grid:hover .a {
+  grid-column-start: 8;
+  grid-row-start: 1;
+} .letter-grid:hover .r1 {
+  grid-column-start: 9;
+  grid-row-start: 1;  
+} .letter-grid:hover .r2 {
+  grid-column-start: 10;
+  grid-row-start: 1;  
+} .letter-grid:hover .e3 {
+  grid-column-start: 11;
+  grid-row-start: 1;  
+} .letter-grid:hover .d {
+  grid-column-start: 12;
+  grid-row-start: 1;  
+}
