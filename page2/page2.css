@@ -1,0 +1,56 @@
+body {
+  background-color: darkslategrey;
+  display: grid;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 5vmax;
+}
+div.container {
+  transition: 20s;
+  width: 30vmax;
+  height: 30vmax;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10vh rgb(236, 236, 236);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 33%);
+  color: rgba(0,0,0,0);
+}
+div.container:hover {
+  transition: 30s;
+  box-shadow: 0 0 5vh rgb(236, 236, 236);
+  color: black;
+}
+div.texture1 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+
+  transition: 20s, background-color 15s;
+  width: 50vmax;
+  height: 50vmax;
+  transform: translate(-25%, -25%);
+  transform-origin: center center;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4vmin),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3vmin),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 2vmin),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 1vmin);
+  background-size: 27.5vw 27.5vw, 14.5vw 14.5vw, 12.5vw 12.5vw, 7.5vw 7.5vw;
+  background-position: 70% 100%, 130% 270%, 40% 60%, 1% 1%;
+}
+div.centertxt {
+  padding-top: 2vmax;
+  padding-bottom: 2vmax;
+  position: relative;
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+div.texture1:hover {
+  transition: 10s, background-color 9s;
+  transform: rotate(900deg) translate(25%, 25%);
+  transform-origin: center center;
+  width: 75vmax;
+  height: 75vmax;
+  background-color: ghostwhite;
+}
